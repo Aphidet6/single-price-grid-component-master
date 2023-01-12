@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 650px;
+    min-height: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+header {
+    background-color: white;
+    padding: 2.5rem;
+    min-height: 200px;
+    font-size: 1rem;
+}
+  
+header h1 {
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 1rem;
+}
+
+header h2 {
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 1rem;
+}
+
+header p {
+    color: hsl(218, 22%, 67%);
+    line-height: 1.5rem;
+}
+
+article {
+    font-size: 1rem;
+    float: left;
+    width: 50%;
+ /* only for demonstration, should be removed */
+    background: hsl(179, 62%, 43%);
+    padding: 2.5rem;
+    color: hsl(204, 43%, 93%);
+    height: 275px;
+}
+
+article h3 {
+    margin-bottom: 1.5rem;
+}
+
+article .price {
+    font-size: 30px;
+    margin-right: 1rem;
+}
+
+article .month {
+    
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-weight:lighter;
+}
+
+article .text2 {
+    margin-bottom: 2rem;
+}
+article a {
+    background-color: hsl(71, 73%, 54%);
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+footer {
+    font-size: 1rem;
+    float: left;
+    padding: 2.5rem;
+    width: 50%;
+    background-color: #4abebd;
+    color: hsl(204, 43%, 93%);
+    height: 275px;
+    line-height: 1.3rem;
+}
+
+footer h3 {
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 375px) {
+
+    header {
+        padding: 1rem;
+        font-size: 8px;
+    }
+    footer, article {
+        padding: 1rem;
+        font-size: 8px;
+        width: 100%;
+        height: auto;
+    }
+    footer h3 {
+        margin-bottom: 0.5rem;
+    }
+    article h3 {
+        margin-bottom: 0.5rem;
+    }
+    article .text2 {
+        margin-bottom: 0.5rem;
+    }
+  }
